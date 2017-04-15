@@ -1,0 +1,182 @@
+@import "partials/*";
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hero-text{
+    margin-top: 22%;
+    padding-bottom: 0;
+@include mq($from: tablet) {
+    margin-top: 250px;
+}
+}
+.hero-large {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    /*text-shadow: 0px 0px 100px #171718;*/
+@include mq($from: tablet) {
+    font-size: 50px;
+}
+}
+.hero-italic {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    /*text-shadow: 0px 0px 100px #171718;*/
+@include mq($from: tablet) {
+    font-size: 40px;
+}
+}
+
+h2 {
+    color: coral;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+h5 {
+    font-size: 28px;
+    font-weight: bold;
+    color: cadetblue;
+}
+a {
+    color: #fff391;
+    font-weight: 600;
+    /*text-decoration: underline;*/
+}
+a:hover {
+    color: #fff391;
+    text-decoration: underline;
+}
+.container-nopadd{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.nav-item{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.main-img {
+    background: url('erika-main.jpg') center center no-repeat;
+}
+.about-img {
+    background: url('lil-bub.jpg') center center no-repeat;
+}
+.bg-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.bg-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(71,147,154,.7), rgba(129,220,228,.7), rgba(255,243,145,.7), rgba(254,161,124,.7));
+}
+.my-name{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /*text-decoration: underline;*/
+    color: white;
+    margin: 20px 20px;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+}
+
+.nav.navbar-nav li a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    text-decoration: underline;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.hire-me-button {
+    border: 1px solid white;
+    padding: 0 20px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.main-containers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+/* HOMEPAGE */
+
+.teal-background {
+    background-color: #3bbfc0;
+    color: white;
+}
+
+.teal-background p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px;
+    font-style: italic;
+    font-weight:200;
+}
+.teal-background h2 {
+    color: white;
+}
+
+.my-work p {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    color: grey;
+    font-weight: 200;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+    height: 200px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    float: left;
+    margin-right: 20px;
+}
+footer ul li a {
+    color: coral;
+}
